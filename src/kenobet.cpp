@@ -36,7 +36,12 @@ bool KenoBet::set_rounds ( cash_type rounds_ )
 	return true;
 }
 
-void KenoBet::reset ( void ) { }
+void KenoBet::reset ( void ) 
+{
+	m_wage = 0;
+	m_rounds = 0;
+	m_spots.clear();
+}
 
 cash_type KenoBet::get_wage ( void ) const
 {
