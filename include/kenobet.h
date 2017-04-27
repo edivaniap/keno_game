@@ -11,9 +11,9 @@ using set_of_numbers_type = std::vector<number_type>;
 class KenoBet
 {
 private:
-	cash_type m_wage; //<! The player's wage.
-	number_type m_rounds; //<! The number of rounds the player wants
-	set_of_numbers_type m_spots; //<! The player's bet.
+    cash_type            m_wage;   //<! The player's wage.
+    number_type          m_rounds; //<! The number of rounds the player wants
+    set_of_numbers_type  m_spots;  //<! The player's bet.
 public:
 	//! Creats an empty Keno bet.
 	KenoBet();
@@ -34,7 +34,7 @@ public:
 	/*! Sets number of rounds.
 		@param rounds_ The number of rounds.
 		@return True if we have a number above zero; false otherwise. */
-	bool set_rounds ( cash_type rounds_ );
+	bool set_rounds ( number_type rounds_ );
 
 	// ! Resets a bet to an empty state.
 	void reset ( void );

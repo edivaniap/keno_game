@@ -1,45 +1,34 @@
-#include <iostream>
-#include "kenobet.h"
-#include "kenogame.h"
+/*!
+ * Main program, which should contain the main game loop.
+ *
+ * \author Edivânia Pontes de Oliveira
+ * \date 26/04/2017
+ */
 
-/*	cash_type payout_table[15][15] = {
-			{ 0.0, 3.0 },
-			{ 0.0, 1.0, 9.0 },
-			{ 0.0, 1.0, 2.0, 16.0 },
-			{ 0.0, 0.5, 2.0,  6.0, 12.0 },
-			{ 0.0, 0.5, 1.0,  3.0, 15.0, 50.0 },
-			{ 0.0, 0.5, 1.0,  2.0,  3.0, 30.0, 75.0 },
-			{ 0.0, 0.5, 0.5,  1.0,  6.0, 12.0, 36.0, 100.0 },
-			{ 0.0, 0.5, 0.5,  1.0,  3.0,  6.0, 19.0,  90.0, 720.0 },
-			{ 0.0, 0.5, 0.5,  1.0,  2.0,  4.0,  8.0,  20.0,  80.0, 1200.0 },
-			{ 0.0, 0.0, 0.5,  1.0,  2.0,  3.0,  5.0,  10.0,  30.0,  600.0, 1800.0 },
-			{ 0.0, 0.0, 0.5,  1.0,  1.0,  2.0,  6.0,  15.0,  25.0,  180.0, 1000.0, 3000.0 },
-			{ 0.0, 0.0, 0.0,  0.5,  1.0,  2.0,  4.0,  24.0,  72.0,  250.0,  500.0, 2000.0, 4000.0 },
-			{ 0.0, 0.0, 0.0,  0.5,  0.5,  3.0,  4.0,   5.0,  20.0,   80.0,  240.0,  500.0, 3000.0, 6000.0 },
-			{ 0.0, 0.0, 0.0,  0.5,  0.5,  2.0,  3.0,   5.0,  12.0,   50.0,  150.0,  500.0, 1000.0, 2000.0, 7500.0 },
-			{ 0.0, 0.0, 0.0,  0.5,  0.5,  1.0,  2.0,   5.0,  15.0,   50.0,  150.0,  300.0,  600.0, 1200.0, 2500.0, 10000.0 }
-		};*/
-
+#include "../include/kenogame.h"
 
 int main(int argc, char const *argv[])
 {
-	KenoBet KenoBet;
-	KenoGame KenoGame;
+    // If player doesn't pass file name by argument, stop program
+    if ( argc < 2)
+        return EXIT_FAILURE;
 
-	if ( argc > 1) {
-		if( not KenoGame.read_file( argv[1], KenoBet) )
-			return -1;
-	} else {
-		std::cout << ">>> main(): Please, enter name of file next time.\n";
-		return -1;
-	}
+    KenoGame kenogame;
 
+    kenogame.initialize_game( argv[1] );
 
+    if( not kenogame.game_over() )
+        kenogame.initial_render();
 
-	std::cout << "cash - "<< KenoBet.get_wage() << "\n";	
-	std::cout << "nr - "<< KenoBet.get_rounds() << "\n";	
-	KenoBet.print_spots();
-	std::cout << "\n";
+    // The Game Loop
+/*    while( not kenogame.game_over() )
+    {
+        //kenogame.process_events();
+        //kenogame.update();
+        //kenogame.render();
+    }*/
 
-	return 0;
+    //kenogame.render_log();
+
+    return EXIT_SUCCESS;
 }

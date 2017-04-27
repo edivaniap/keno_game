@@ -1,6 +1,10 @@
 #include "kenobet.h"
 
-KenoBet::KenoBet() { m_wage = 0; }
+KenoBet::KenoBet() 
+{ 
+	m_wage = 0; 
+	m_rounds = 0;
+}
 
 KenoBet::~KenoBet() { /*delete [] m_spots;*/ }
 
@@ -28,9 +32,9 @@ bool KenoBet::set_wage ( cash_type wage_ )
 	return true;
 }
 
-bool KenoBet::set_rounds ( cash_type rounds_ )
+bool KenoBet::set_rounds ( number_type rounds_ )
 {
-	if( m_rounds <= 0) 
+	if( rounds_ <= 0)
 		return false;
 	m_rounds = rounds_;
 	return true;
