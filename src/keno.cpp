@@ -1,8 +1,10 @@
-/*!
- * Main program, which should contain the main game loop.
- *
- * \author Edivânia Pontes de Oliveira
- * \date 26/04/2017
+/**
+ * @file keno.cpp
+ * @version 1.0
+ * @date 26/04/2017
+ * @author Edivânia Pontes de Oliveira
+ * @title Main program
+ * @brief The Main program contain the main game loop.
  */
 
 #include "../include/kenogame.h"
@@ -20,15 +22,17 @@ int main(int argc, char const *argv[])
     if( not kenogame.game_over() )
         kenogame.initial_render();
 
-    // The Game Loop
-/*    while( not kenogame.game_over() )
-    {
-        //kenogame.process_events();
-        //kenogame.update();
-        //kenogame.render();
-    }*/
+    srand((unsigned)time(0)); //for rand
 
-    //kenogame.render_log();
+    // The Game Loop
+    while( not kenogame.game_over() )
+    {
+        kenogame.process_round();
+        kenogame.update();
+        kenogame.render();
+    }
+
+    kenogame.render_log();
 
     return EXIT_SUCCESS;
 }

@@ -16,13 +16,14 @@ For example, if a player picked seven numbers and all seven were chosen (very un
 - [X] Implement the class KenoBet
 - [X] Read data of a file with the player's bet
 - [X] Implement main() with game loop.
-- [ ] Implement the class KenoGame
+- [X] Implement the class KenoGame
+- [X] Creats doxygen documentation
 
 # How to build
 
 	`$ g++ -Wall -std=c++11 src/keno.cpp src/kenogame.cpp src/kenobet.cpp -I include -o build/keno`
 
-	`$ ./build/keno <filename>`
+	`$ ./build/keno data/bet.dat`
 
 # Authorship
 

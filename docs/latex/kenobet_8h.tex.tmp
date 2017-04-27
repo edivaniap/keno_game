@@ -1,0 +1,45 @@
+\hypertarget{kenobet_8h}{}\section{include/kenobet.h File Reference}
+\label{kenobet_8h}\index{include/kenobet.\+h@{include/kenobet.\+h}}
+
+
+Class for player bet configuration.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for kenobet.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classKenoBet}{Keno\+Bet}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using {\bfseries cash\+\_\+type} = float\hypertarget{kenobet_8h_ac28b879a6299b00985cb872f5dd9185f}{}\label{kenobet_8h_ac28b879a6299b00985cb872f5dd9185f}
+
+\item 
+using {\bfseries number\+\_\+type} = unsigned short int\hypertarget{kenobet_8h_a1b74f79564dbd5be0e29e97ee8445c7b}{}\label{kenobet_8h_a1b74f79564dbd5be0e29e97ee8445c7b}
+
+\item 
+using {\bfseries set\+\_\+of\+\_\+numbers\+\_\+type} = std\+::vector$<$ number\+\_\+type $>$\hypertarget{kenobet_8h_a86a613ceb4f7f45862f71ba4f5edde15}{}\label{kenobet_8h_a86a613ceb4f7f45862f71ba4f5edde15}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for player bet configuration. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22/04/2017 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Edivânia Pontes de Oliveira  Class Keno bet 
+\end{DoxyAuthor}

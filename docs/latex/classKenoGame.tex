@@ -1,0 +1,169 @@
+\hypertarget{classKenoGame}{}\section{Keno\+Game Class Reference}
+\label{classKenoGame}\index{Keno\+Game@{Keno\+Game}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classKenoGame_a64877ba25ad18afea7677c128ae43654}{initialize\+\_\+game} (std\+::string filename)
+\item 
+void \hyperlink{classKenoGame_a1032bbc52edd52c30098bed5062dcea0}{process\+\_\+round} (void)
+\item 
+void \hyperlink{classKenoGame_ad9a216d0858618ff0ccf0e9bb23110cd}{update} (void)
+\item 
+void \hyperlink{classKenoGame_a57847bc61e3415cad29476314234f8b4}{initial\+\_\+render} (void) const 
+\item 
+void \hyperlink{classKenoGame_aa4023e5b69f88b7a807dc224b9dff5ef}{render} (void) const 
+\item 
+void \hyperlink{classKenoGame_aed7eac5a9df192e94b493089e2d0b871}{render\+\_\+log} (void) const 
+\item 
+void \hyperlink{classKenoGame_acaecdc385b318d483884b5e525ac5dbc}{print\+\_\+payout\+\_\+table} (void) const 
+\item 
+void \hyperlink{classKenoGame_ad801be67754197194c38f4bfcaae07cc}{print\+\_\+selecteds} (void) const 
+\item 
+void \hyperlink{classKenoGame_a40eccd25feb4cca369e9ed9ee27ea730}{print\+\_\+curr\+\_\+hits} (void) const 
+\item 
+void \hyperlink{classKenoGame_a6a2926b0deb7e6060a3969be56dca1db}{set\+\_\+curr\+\_\+hits} (void)
+\item 
+bool \hyperlink{classKenoGame_acff1e1a4e4a9884a48e84d64356893a3}{game\+\_\+over} (void) const 
+\item 
+number\+\_\+type \hyperlink{classKenoGame_af02fd68f7ea21e06f79f2074537fe2e6}{generate\+\_\+random} () const 
+\item 
+bool \hyperlink{classKenoGame_a5a4d1a2bffd82ef3656ea6017cd2c07c}{is\+\_\+unique} (number\+\_\+type elem\+\_\+) const 
+\item 
+bool \hyperlink{classKenoGame_a145c35bcb09cd8159c66154396d588d2}{read\+\_\+file} (std\+::string filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Keno\+Game@{Keno\+Game}!game\+\_\+over@{game\+\_\+over}}
+\index{game\+\_\+over@{game\+\_\+over}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{game\+\_\+over(void) const }{game_over(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Keno\+Game\+::game\+\_\+over (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_acff1e1a4e4a9884a48e84d64356893a3}{}\label{classKenoGame_acff1e1a4e4a9884a48e84d64356893a3}
+Check if the game is over \begin{DoxyReturn}{Returns}
+True if the game\textquotesingle{}s over, false otherwise. 
+\end{DoxyReturn}
+\index{Keno\+Game@{Keno\+Game}!generate\+\_\+random@{generate\+\_\+random}}
+\index{generate\+\_\+random@{generate\+\_\+random}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{generate\+\_\+random() const }{generate_random() const }}]{\setlength{\rightskip}{0pt plus 5cm}number\+\_\+type Keno\+Game\+::generate\+\_\+random (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_af02fd68f7ea21e06f79f2074537fe2e6}{}\label{classKenoGame_af02fd68f7ea21e06f79f2074537fe2e6}
+Generate a random number for the raffle. \begin{DoxyReturn}{Returns}
+Random number between 1 and 80. 
+\end{DoxyReturn}
+\index{Keno\+Game@{Keno\+Game}!initial\+\_\+render@{initial\+\_\+render}}
+\index{initial\+\_\+render@{initial\+\_\+render}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{initial\+\_\+render(void) const }{initial_render(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::initial\+\_\+render (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_a57847bc61e3415cad29476314234f8b4}{}\label{classKenoGame_a57847bc61e3415cad29476314234f8b4}
+Displays game\textquotesingle{}s initial informations on the screen after after read the player\textquotesingle{}s file. \index{Keno\+Game@{Keno\+Game}!initialize\+\_\+game@{initialize\+\_\+game}}
+\index{initialize\+\_\+game@{initialize\+\_\+game}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{initialize\+\_\+game(std\+::string filename)}{initialize_game(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::initialize\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoGame_a64877ba25ad18afea7677c128ae43654}{}\label{classKenoGame_a64877ba25ad18afea7677c128ae43654}
+Initialize the game data if it could possible reads player\textquotesingle{}r file. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Bet file name. \\
+\hline
+\end{DoxyParams}
+\index{Keno\+Game@{Keno\+Game}!is\+\_\+unique@{is\+\_\+unique}}
+\index{is\+\_\+unique@{is\+\_\+unique}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{is\+\_\+unique(number\+\_\+type elem\+\_\+) const }{is_unique(number_type elem_) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Keno\+Game\+::is\+\_\+unique (
+\begin{DoxyParamCaption}
+\item[{number\+\_\+type}]{elem\+\_\+}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_a5a4d1a2bffd82ef3656ea6017cd2c07c}{}\label{classKenoGame_a5a4d1a2bffd82ef3656ea6017cd2c07c}
+Check if the random number is already in vector of numbers selecteds. 
+\begin{DoxyParams}{Parameters}
+{\em elem\+\_\+} & Number randomly generated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if elem\+\_\+ isn\textquotesingle{}t on vector, false otherwise. 
+\end{DoxyReturn}
+\index{Keno\+Game@{Keno\+Game}!print\+\_\+curr\+\_\+hits@{print\+\_\+curr\+\_\+hits}}
+\index{print\+\_\+curr\+\_\+hits@{print\+\_\+curr\+\_\+hits}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{print\+\_\+curr\+\_\+hits(void) const }{print_curr_hits(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::print\+\_\+curr\+\_\+hits (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_a40eccd25feb4cca369e9ed9ee27ea730}{}\label{classKenoGame_a40eccd25feb4cca369e9ed9ee27ea730}
+Prints player\textquotesingle{}s hits in current round. \index{Keno\+Game@{Keno\+Game}!print\+\_\+payout\+\_\+table@{print\+\_\+payout\+\_\+table}}
+\index{print\+\_\+payout\+\_\+table@{print\+\_\+payout\+\_\+table}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{print\+\_\+payout\+\_\+table(void) const }{print_payout_table(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::print\+\_\+payout\+\_\+table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_acaecdc385b318d483884b5e525ac5dbc}{}\label{classKenoGame_acaecdc385b318d483884b5e525ac5dbc}
+Prints the payout table according to the number of spots and hits of the player. \index{Keno\+Game@{Keno\+Game}!print\+\_\+selecteds@{print\+\_\+selecteds}}
+\index{print\+\_\+selecteds@{print\+\_\+selecteds}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{print\+\_\+selecteds(void) const }{print_selecteds(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::print\+\_\+selecteds (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_ad801be67754197194c38f4bfcaae07cc}{}\label{classKenoGame_ad801be67754197194c38f4bfcaae07cc}
+Prints the randoms numbers of the raffle. \index{Keno\+Game@{Keno\+Game}!process\+\_\+round@{process\+\_\+round}}
+\index{process\+\_\+round@{process\+\_\+round}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{process\+\_\+round(void)}{process_round(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::process\+\_\+round (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoGame_a1032bbc52edd52c30098bed5062dcea0}{}\label{classKenoGame_a1032bbc52edd52c30098bed5062dcea0}
+Process the rounds, generating 20 new numbers for raffle and calculating player\textquotesingle{}s hits. \index{Keno\+Game@{Keno\+Game}!read\+\_\+file@{read\+\_\+file}}
+\index{read\+\_\+file@{read\+\_\+file}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{read\+\_\+file(std\+::string filename)}{read_file(std::string filename)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Keno\+Game\+::read\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoGame_a145c35bcb09cd8159c66154396d588d2}{}\label{classKenoGame_a145c35bcb09cd8159c66154396d588d2}
+Reads the player\textquotesingle{}s bet file. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Bet file name. \\
+\hline
+{\em kenobet\+\_\+} & \hyperlink{classKenoBet}{Keno\+Bet} with player bet data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file was successfully read. 
+\end{DoxyReturn}
+\index{Keno\+Game@{Keno\+Game}!render@{render}}
+\index{render@{render}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{render(void) const }{render(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::render (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_aa4023e5b69f88b7a807dc224b9dff5ef}{}\label{classKenoGame_aa4023e5b69f88b7a807dc224b9dff5ef}
+Displays game\textquotesingle{}s informations on the screen after after each round update. \index{Keno\+Game@{Keno\+Game}!render\+\_\+log@{render\+\_\+log}}
+\index{render\+\_\+log@{render\+\_\+log}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{render\+\_\+log(void) const }{render_log(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::render\+\_\+log (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoGame_aed7eac5a9df192e94b493089e2d0b871}{}\label{classKenoGame_aed7eac5a9df192e94b493089e2d0b871}
+Displays game\textquotesingle{}s final information on the screen after the game is over. \index{Keno\+Game@{Keno\+Game}!set\+\_\+curr\+\_\+hits@{set\+\_\+curr\+\_\+hits}}
+\index{set\+\_\+curr\+\_\+hits@{set\+\_\+curr\+\_\+hits}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{set\+\_\+curr\+\_\+hits(void)}{set_curr_hits(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::set\+\_\+curr\+\_\+hits (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoGame_a6a2926b0deb7e6060a3969be56dca1db}{}\label{classKenoGame_a6a2926b0deb7e6060a3969be56dca1db}
+Sets number of player\textquotesingle{}s hits in current round. \index{Keno\+Game@{Keno\+Game}!update@{update}}
+\index{update@{update}!Keno\+Game@{Keno\+Game}}
+\subsubsection[{\texorpdfstring{update(void)}{update(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Game\+::update (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoGame_ad9a216d0858618ff0ccf0e9bb23110cd}{}\label{classKenoGame_ad9a216d0858618ff0ccf0e9bb23110cd}
+Updates the game data after process a round. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{kenogame_8h}{kenogame.\+h}\item 
+src/\hyperlink{kenogame_8cpp}{kenogame.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{classKenoBet}{}\section{Keno\+Bet Class Reference}
+\label{classKenoBet}\index{Keno\+Bet@{Keno\+Bet}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKenoBet_a383bdbb38df73584f72670a1cd0f777b}{Keno\+Bet} ()\hypertarget{classKenoBet_a383bdbb38df73584f72670a1cd0f777b}{}\label{classKenoBet_a383bdbb38df73584f72670a1cd0f777b}
+
+\begin{DoxyCompactList}\small\item\em Creats an empty Keno bet. \end{DoxyCompactList}\item 
+\hyperlink{classKenoBet_a93324a54b5d94b798939a4b92aeb3de8}{$\sim$\+Keno\+Bet} ()\hypertarget{classKenoBet_a93324a54b5d94b798939a4b92aeb3de8}{}\label{classKenoBet_a93324a54b5d94b798939a4b92aeb3de8}
+
+\begin{DoxyCompactList}\small\item\em Destroy Keno bet. \end{DoxyCompactList}\item 
+bool \hyperlink{classKenoBet_a670252422c82f61d89873e2917ab19ff}{add\+\_\+number} (number\+\_\+type spot\+\_\+)
+\item 
+bool \hyperlink{classKenoBet_ade3e0f73094137c791c22c51bdd9ce55}{set\+\_\+wage} (cash\+\_\+type wage\+\_\+)
+\item 
+void \hyperlink{classKenoBet_a8c75a2fc906904f3813d12c8d8bab206}{set\+\_\+net\+\_\+balance} (cash\+\_\+type value\+\_\+)
+\item 
+bool \hyperlink{classKenoBet_a513c7b942977a682d31c2242ca411fe4}{set\+\_\+rounds} (number\+\_\+type rounds\+\_\+)
+\item 
+void \hyperlink{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}{reset} (void)
+\item 
+cash\+\_\+type \hyperlink{classKenoBet_a154dce28288b205e6750f162da7808b5}{get\+\_\+wage} (void) const 
+\item 
+cash\+\_\+type \hyperlink{classKenoBet_a268383238c252c07f506614ff8999224}{get\+\_\+rounds} (void) const 
+\item 
+cash\+\_\+type \hyperlink{classKenoBet_a0da2e76674a36bf5849aa303584ccedb}{get\+\_\+net\+\_\+balance} (void) const 
+\item 
+size\+\_\+t \hyperlink{classKenoBet_a56733c32bd4fa67c2e2d028f814bc545}{size} (void) const 
+\item 
+set\+\_\+of\+\_\+numbers\+\_\+type \hyperlink{classKenoBet_a5771cea869177b33fae6498e8630dd9a}{get\+\_\+spots} (void) const 
+\item 
+void \hyperlink{classKenoBet_a0100ad317ea6ac529d450d8612a263a8}{print\+\_\+spots} (void) const 
+\item 
+void \hyperlink{classKenoBet_a220cd4de587db9919864e9605e4c1dfa}{sort\+\_\+spots} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Keno\+Bet@{Keno\+Bet}!add\+\_\+number@{add\+\_\+number}}
+\index{add\+\_\+number@{add\+\_\+number}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{add\+\_\+number(number\+\_\+type spot\+\_\+)}{add_number(number_type spot_)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Keno\+Bet\+::add\+\_\+number (
+\begin{DoxyParamCaption}
+\item[{number\+\_\+type}]{spot\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoBet_a670252422c82f61d89873e2917ab19ff}{}\label{classKenoBet_a670252422c82f61d89873e2917ab19ff}
+Adds a number to the spots only if the number is not already there. 
+\begin{DoxyParams}{Parameters}
+{\em spot\+\_\+} & The number we wish to include in the bet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T if number chosen is successfully inserted; F otherwise. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+net\+\_\+balance@{get\+\_\+net\+\_\+balance}}
+\index{get\+\_\+net\+\_\+balance@{get\+\_\+net\+\_\+balance}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{get\+\_\+net\+\_\+balance(void) const }{get_net_balance(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}cash\+\_\+type Keno\+Bet\+::get\+\_\+net\+\_\+balance (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoBet_a0da2e76674a36bf5849aa303584ccedb}{}\label{classKenoBet_a0da2e76674a36bf5849aa303584ccedb}
+Retrieves the net balanceduring the rounds. \begin{DoxyReturn}{Returns}
+The value of net balance. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+rounds@{get\+\_\+rounds}}
+\index{get\+\_\+rounds@{get\+\_\+rounds}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{get\+\_\+rounds(void) const }{get_rounds(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}cash\+\_\+type Keno\+Bet\+::get\+\_\+rounds (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoBet_a268383238c252c07f506614ff8999224}{}\label{classKenoBet_a268383238c252c07f506614ff8999224}
+Retrieves the number of rounds on this bet. \begin{DoxyReturn}{Returns}
+The number of rounds. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+spots@{get\+\_\+spots}}
+\index{get\+\_\+spots@{get\+\_\+spots}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{get\+\_\+spots(void) const }{get_spots(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}set\+\_\+of\+\_\+numbers\+\_\+type Keno\+Bet\+::get\+\_\+spots (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoBet_a5771cea869177b33fae6498e8630dd9a}{}\label{classKenoBet_a5771cea869177b33fae6498e8630dd9a}
+Return a vector $<$ spot\+\_\+type $>$ with the spots the player has picked so far. \begin{DoxyReturn}{Returns}
+The vector $<$ spot\+\_\+type $>$ with the player ’s spots picked so far. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!get\+\_\+wage@{get\+\_\+wage}}
+\index{get\+\_\+wage@{get\+\_\+wage}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{get\+\_\+wage(void) const }{get_wage(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}cash\+\_\+type Keno\+Bet\+::get\+\_\+wage (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoBet_a154dce28288b205e6750f162da7808b5}{}\label{classKenoBet_a154dce28288b205e6750f162da7808b5}
+Retrieves the player’s wage on this bet. \begin{DoxyReturn}{Returns}
+The wage value. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!print\+\_\+spots@{print\+\_\+spots}}
+\index{print\+\_\+spots@{print\+\_\+spots}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{print\+\_\+spots(void) const }{print_spots(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Bet\+::print\+\_\+spots (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoBet_a0100ad317ea6ac529d450d8612a263a8}{}\label{classKenoBet_a0100ad317ea6ac529d450d8612a263a8}
+Print the player spots. \index{Keno\+Bet@{Keno\+Bet}!reset@{reset}}
+\index{reset@{reset}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{reset(void)}{reset(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Bet\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}{}\label{classKenoBet_acc2afd4d502e44fdfbb122f3389bc633}
+Resets a bet to an empty state. \index{Keno\+Bet@{Keno\+Bet}!set\+\_\+net\+\_\+balance@{set\+\_\+net\+\_\+balance}}
+\index{set\+\_\+net\+\_\+balance@{set\+\_\+net\+\_\+balance}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{set\+\_\+net\+\_\+balance(cash\+\_\+type value\+\_\+)}{set_net_balance(cash_type value_)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Bet\+::set\+\_\+net\+\_\+balance (
+\begin{DoxyParamCaption}
+\item[{cash\+\_\+type}]{value\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoBet_a8c75a2fc906904f3813d12c8d8bab206}{}\label{classKenoBet_a8c75a2fc906904f3813d12c8d8bab206}
+Sets the player\textquotesingle{}s net balance during the rounds. 
+\begin{DoxyParams}{Parameters}
+{\em value\+\_\+} & Value that will be added or subtracted from the salary. \\
+\hline
+\end{DoxyParams}
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+rounds@{set\+\_\+rounds}}
+\index{set\+\_\+rounds@{set\+\_\+rounds}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{set\+\_\+rounds(number\+\_\+type rounds\+\_\+)}{set_rounds(number_type rounds_)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Keno\+Bet\+::set\+\_\+rounds (
+\begin{DoxyParamCaption}
+\item[{number\+\_\+type}]{rounds\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoBet_a513c7b942977a682d31c2242ca411fe4}{}\label{classKenoBet_a513c7b942977a682d31c2242ca411fe4}
+Sets number of rounds. 
+\begin{DoxyParams}{Parameters}
+{\em rounds\+\_\+} & The number of rounds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we have a number above zero; false otherwise. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!set\+\_\+wage@{set\+\_\+wage}}
+\index{set\+\_\+wage@{set\+\_\+wage}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{set\+\_\+wage(cash\+\_\+type wage\+\_\+)}{set_wage(cash_type wage_)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Keno\+Bet\+::set\+\_\+wage (
+\begin{DoxyParamCaption}
+\item[{cash\+\_\+type}]{wage\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoBet_ade3e0f73094137c791c22c51bdd9ce55}{}\label{classKenoBet_ade3e0f73094137c791c22c51bdd9ce55}
+Sets the amount of money the player is betting. 
+\begin{DoxyParams}{Parameters}
+{\em wage\+\_\+} & The wage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we have a wage above zero; false otherwise. 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!size@{size}}
+\index{size@{size}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{size(void) const }{size(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Keno\+Bet\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classKenoBet_a56733c32bd4fa67c2e2d028f814bc545}{}\label{classKenoBet_a56733c32bd4fa67c2e2d028f814bc545}
+Returns to the current number of spots in the player ’s bet . \begin{DoxyReturn}{Returns}
+Number of spots present in the bet . 
+\end{DoxyReturn}
+\index{Keno\+Bet@{Keno\+Bet}!sort\+\_\+spots@{sort\+\_\+spots}}
+\index{sort\+\_\+spots@{sort\+\_\+spots}!Keno\+Bet@{Keno\+Bet}}
+\subsubsection[{\texorpdfstring{sort\+\_\+spots(void)}{sort_spots(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Keno\+Bet\+::sort\+\_\+spots (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classKenoBet_a220cd4de587db9919864e9605e4c1dfa}{}\label{classKenoBet_a220cd4de587db9919864e9605e4c1dfa}
+Sort the player spots. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{kenobet_8h}{kenobet.\+h}\item 
+src/\hyperlink{kenobet_8cpp}{kenobet.\+cpp}\end{DoxyCompactItemize}
