@@ -33,11 +33,13 @@ After a valid bet is processed, the game runs **NR** rounds, waging in each roun
 
 # Git repository
 
-[**projetos.imd.ufrn.br/edivaniap/keno_game**](http://projetos.imd.ufrn.br/edivaniap/keno_game)
+[**projetos.imd.ufrn.br/edivaniap/keno_game**](http://projetos.imd.ufrn.br/edivaniap/keno_game)  
+[**github.com/vaniati/keno_game**](http://github.com/vaniati/keno_game)
 
 
 # Authorship
 
-Program developed by _Edivânia Pontes de Oliveira_ (< *edivaniap@ufrn.edu.br* >), 2017.1
+Program developed by _Edivânia Pontes de Oliveira_ (< *edivaniap@ufrn.edu.br* >), 2017.1  
+Guided by _Selan R. dos Santos_
 
 &copy; IMD/UFRN 2017.
